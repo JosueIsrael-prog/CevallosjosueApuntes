@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:CevallosjosueApuntes.Models"
+             x:Class="CevallosjosueApuntes.Views.AboutPage">
+    <ContentPage.BindingContext>
+        <models:About />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Margin="10">
+            <HorizontalStackLayout>
+                <Label Text="Dilan Herrera"
+                       FontSize="30"/>  
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Tengo 19 años y me gusta los videojuegos"
+                       FontSize="15"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Image Source="meme_progra.jpg" 
+                       HeightRequest="300"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="dotnet_bot.png"
+                       SemanticProperties.Description="El bot dot net saludando!"
+                       HeightRequest="64" />
+               
+                <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
+                <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
+            </HorizontalStackLayout>
+
+            <Label Text="{Binding Message}" />
+            <Button Text="Saber más..." Clicked="LearnMore_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
