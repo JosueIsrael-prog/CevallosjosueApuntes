@@ -1,0 +1,66 @@
+[33mcommit dc9d641d1b8f3c3f64be4d56289463577006cad8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: e721e15 9db00d7
+Author: JosueIsrael-prog <ji8792752@gmail.com>
+Date:   Sun Dec 22 02:35:10 2024 -0500
+
+    Merge branch 'main' of https://github.com/JosueIsrael-prog/CevallosjosueApuntes
+
+[33mcommit e721e151d339c97271f0550f9fbb19d1e8206146[m
+Author: JosueIsrael-prog <ji8792752@gmail.com>
+Date:   Sun Dec 22 02:32:16 2024 -0500
+
+    Nombrar a la interfaz
+
+[33mcommit 9db00d71ad02da7692eb27e11c8d10042863b572[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 01:02:37 2024 -0500
+
+    Configurar servicios e inicialización de la aplicación
+
+[33mcommit adedd5dc0df46f1b07c10e4cf8999575c9beea4a[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 01:02:07 2024 -0500
+
+    Actualizar configuración del proyecto
+
+[33mcommit fe4c806db8122e3e27820d5bb7b96eac1ed01a49[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 01:01:36 2024 -0500
+
+    Configurar solución principal del proyecto
+
+[33mcommit 90c8dc29b4c26c6b72281ffa12c07747156002fc[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 01:00:58 2024 -0500
+
+    Actualizar configuración del proyecto
+
+[33mcommit a4703ec8c698c651a1df0ee8e7825e312046bdfc[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 01:00:07 2024 -0500
+
+    Configurar lógica de navegación
+
+[33mcommit b562e2b55666980f3eb7515d974b0da42c9941ff[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 00:59:36 2024 -0500
+
+    Definir rutas de navegación
+
+[33mcommit db23335fdbb87e467faee9d5fece4c9db7ae2c3f[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 00:59:00 2024 -0500
+
+    Implementar lógica inicial de la aplicación
+
+[33mcommit d812135deadb507d6f598570cdc0d86212380faa[m
+Author: JosueIsrael-prog <131050552+JosueIsrael-prog@users.noreply.github.com>
+Date:   Sun Dec 22 00:58:25 2024 -0500
+
+    Definir estructura inicial de la aplicación en App.xaml
+
+[33mcommit 06ad7002a671661b73bfed22de7f80b594911ff2[m
+Author: JosueIsrael-prog <ji8792752@gmail.com>
+Date:   Sun Dec 22 00:42:04 2024 -0500
+
+    Apuntes

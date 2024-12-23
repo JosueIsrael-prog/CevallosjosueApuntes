@@ -1,3 +1,5 @@
+using CevallosjosueApuntes.Views; 
+
 namespace CevallosjosueApuntes
 {
     public partial class AppShell : Shell
@@ -6,8 +8,8 @@ namespace CevallosjosueApuntes
         {
             InitializeComponent();
 
-            Routing.RegisterRoute(nameof(Views.NotePage), typeof(Views.NotePage));
+           
+            Routing.RegisterRoute(nameof(NotePage), typeof(NotePage));
         }
     }
 }
-

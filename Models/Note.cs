@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace CevallosjosueApuntes.Models
 {
-    internal class Note
+    public class Note
     {
-        public string Filename { get; set; }
-        public string Text { get; set; }
-        public DateTime Date { get; set; }
+        public string Filename { get; set; } = string.Empty; // Propiedad agregada
+        public string Text { get; set; } = string.Empty;
+        public DateTime Date { get; set; } = DateTime.Now;
     }
 }

@@ -1,57 +1,32 @@
-namespace CevallosjosueApuntes.Views;
-[QueryProperty(nameof(ItemId), nameof(ItemId))]
+using CevallosjosueApuntes.Models;
 
-public partial class NotePage : ContentPage
+namespace CevallosjosueApuntes.Views
 {
-    string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
-
-    public NotePage()
+    public partial class NotePage : ContentPage
     {
-        InitializeComponent();
-
-        string appDataPath = FileSystem.AppDataDirectory;
-        string randomFileName = $"{Path.GetRandomFileName()}.notes.txt";
-
-        LoadNote(Path.Combine(appDataPath, randomFileName));
-    }
-
-    private async void SaveButton_Clicked(object sender, EventArgs e)
-    {
-        if (BindingContext is Models.Note note)
-            File.WriteAllText(note.Filename, TextEditor.Text);
-
-        await Shell.Current.GoToAsync("..");
-    }
-
-    private async void DeleteButton_Clicked(object sender, EventArgs e)
-    {
-        if (BindingContext is Models.Note note)
+        public NotePage()
         {
-            // Delete the file.
-            if (File.Exists(note.Filename))
-                File.Delete(note.Filename);
+            InitializeComponent();
         }
 
-        await Shell.Current.GoToAsync("..");
-    }
-    public string ItemId
-    {
-        set { LoadNote(value); }
-    }
-
-    private void LoadNote(string fileName)
-    {
-
-        Models.Note noteModel = new Models.Note();
-        noteModel.Filename = fileName;
-
-        if (File.Exists(fileName))
+        public NotePage(Note note)
         {
-            noteModel.Date = File.GetCreationTime(fileName);
-            noteModel.Text = File.ReadAllText(fileName);
+            InitializeComponent();
+            BindingContext = note;
         }
 
-        BindingContext = noteModel;
-    }
+        private async void OnSaveClicked(object sender, EventArgs e)
+        {
+            if (BindingContext is Note note)
+            {
+                string appDataPath = FileSystem.AppDataDirectory;
+                string filename = Path.Combine(appDataPath, $"{Path.GetRandomFileName()}.notes.txt");
 
+                File.WriteAllText(filename, note.Text);
+                note.Filename = filename;
+
+                await Shell.Current.GoToAsync("..");
+            }
+        }
+    }
 }
